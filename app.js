@@ -2,7 +2,7 @@
 const express = require('express');
 
 const app = express();
-
+var port = process.env.PORT || 8080
 
 const nav=[
     {
@@ -61,4 +61,4 @@ title:'Library'
     });
 });
 
-app.listen(8080);
+app.listen(port);
